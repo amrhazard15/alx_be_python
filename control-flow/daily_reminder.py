@@ -20,13 +20,14 @@ while True:
 
 match priority:
     case "high":
-        base = f"'{task}' is a high priority task"
+        priority_text = "high"
     case "medium":
-        base = f"'{task}' is a medium priority task"
+        priority_text = "medium"
     case "low":
-        base = f"'{task}' is a low priority task"
+        priority_text = "low"
 
 if time_bound == "yes":
-    print(f"\nReminder: {base} that requires immediate attention today!")
+
+    print(f"Reminder: '{task}' is a {priority_text} priority task that requires immediate attention today!")
 else:
-    print(f"\nNote: {base}. Consider completing it when you have free time.")
+    print(f"Note: '{task}' is a {priority_text} priority task. Consider completing it when you have free time.")
